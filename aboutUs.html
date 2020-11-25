@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <!-- Skeleton HTML and CSS document, created by Kieran McKinney -->
+    <!-- About Us webpage by David Rodgers -->
+
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <title>About Us | Among Us | RGU Societies</title>
+        <link rel="stylesheet" type="text/css" href="CSS/aboutUs.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/darkMode.css" />
+        <link rel="icon" href="images/logo.png" />
+    </head>
+    
+    <body>
+        
+        <!-- Button that toggles dark mode for users -->
+        <button onclick="toggleDarkMode()" class="toggleButton" id="toggleButton">Toggle Dark <br/> Mode</button>
+        
+        <div class="content-wrapper">
+            <!-- Header block; contains the site logo and nav bar -->
+            <header id="header">
+                <h1>Among Us</h1>
+                <div class="topnav" id="myTopnav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Events</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">How To Play</a>
+                    <a href="#">Image Gallery</a>
+                    <a href="#">Current Members</a>
+                    <a href="#">Content Creators</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Merch</a>
+                    <a href="javascript:void(0);" class="icon" onclick="dropDownNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </header>
+            
+            <hr />
+            
+            <!-- Main Content -->
+            <main id="main">
+                <h1>About Us</h1> 
+                <br>
+                <h2>What we do</h2>
+                <!--"content" div tag to split the page into 2 columns to seperate text from images-->
+                <div class="content">
+                    <div>     
+                        <!--Text column takes up 70% of the page-->
+                        <p>Welcome to the official RGU Among Us Society, a society dedicated to the popular social deduction game known as "Among Us". As an RGU society, it's our responsibility to enhance the student experience by allowing students to come together and bond over a certain hobby. As the Among Us society, we do this by hosting events so that students have the opportunity to meet each other and relax while playing. If you would like to see our schedule, as well as what types of events we plan, then you can check out our calendar up at the Navigation Bar. Our society is the fastest growing society in RGU, and if you'd like to see how far we've come, you can check out our list of Current Members too. If you join our society, you'll also get your name listed on it. We sincerely hope you consider joining us, as we'd love to have you join. By becoming a member, you'll get access to our official private discord server and facebook group too, as well as the privilege of being able to brag about being in the best out of all of the RGU societies. </p>
+                    </div>
+                    <!--Image column takes up remaining 30% of the page, 10% column gap between them-->
+                    <div>
+                        <img src="images/logo.png" alt="Among Us Logo" width=180px height=180px>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!--Repeated process for second  row-->
+                <h2>How to join</h2>
+                <div class="content">
+                    <div>
+                        <p>If you are interested in the RGU Among Us Society, then joining is incredibly simple. All you have to do is head on over to the <a href="https://www.rguunion.co.uk/">RGUnion website</a>. If you'd like to navigate your way there yourself, find our society listed under:
+                        <br>
+                        <br>
+                        <b>Get Involved > Societies > Societies A-Z</b>
+                        <br>
+                        <br>
+                        Otherwise, just follow <a href="https://www.rguunion.co.uk/getinvolved/societies/">this convenient link</a>. In order to join, you must currently be studying at RGU. Simply log in, pay the £5 membership fee, and welcome to the team!</p>
+                    </div> 
+        
+                    <div>
+                        <img src="images/RGUnion.jpg" alt="RGUnion Logo" width=180px height=180px>
+                    </div>
+                    <br><br><br><br><br>
+                </div>
+         
+            </main>
+              
+            <hr />
+        
+            <!-- Footer Block -->
+            <footer id="footer">
+                <div class="leftFooter">
+                    <p>Robert Gordon University,<br />Garthdee House,<br />Garthdee Road,<br />Aberdeen<br />AB10 7QB</p>
+                </div>
+                <div class="centreFooter">
+                    <img src="images/footer.jpg" class="footerImg" />
+                    <p>Buy the game via steam, <a href="https://store.steampowered.com/app/945360/Among_Us/">here</a>.</p>
+                </div>
+                <div class="rightFooter">
+                    <div class="icon-wrapper">
+                        <a href="#" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+                        <a href="#" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fa fa-youtube-square"></i></a>
+                        <a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" title="Snapchat"><i class="fa fa-snapchat-square"></i></a>
+                    </div>
+                </div>
+                <div class="bottomFooter">
+                    <p>@ 2020 Robert Gordons University, Computing</p>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- Inline JavaScript Section -->
+        <script>
+            // Function that changes the styling of elements on button click
+            function toggleDarkMode() {
+                var header = document.getElementById("header");
+                var main = document.getElementById("main");
+                var footer = document.getElementById("footer");
+                var hrItems = document.getElementsByTagName("hr");
+                var button = document.getElementById("toggleButton");
+                header.classList.toggle("header_dark");
+                main.classList.toggle("main_dark");
+                footer.classList.toggle("footer_dark");
+                button.classList.toggle("button_dark");
+                for (var i = 0; i < hrItems.length; i++) {
+                    hrItems[i].classList.toggle("hr_dark");
+                }
+            }
+            
+            
+            // Function that adds a class to "topnav" allowing for the drop down menu on Mobile
+            function dropDownNav() {
+                var nav = document.getElementById("myTopnav");
+                if (nav.className === "topnav") {
+                    nav.className += " responsive";
+                } else {
+                    nav.className = "topnav";
+                }
+            }
+        </script>
+        
+    </body>
+</html>

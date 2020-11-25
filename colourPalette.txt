@@ -1,0 +1,12 @@
+Colour Pallete:
+
+Text: #333
+Background: #FFF
+(Dark Mode, Toggle these colours using JS)
+
+Other Complementary Colours:
+- #003049 (Prussian Blue)
+- #D62828 (Maximum Red)
+- #F77F00 (Orange)
+- #FCBF49 (Maximum Yellow Red)
+- #EAE2B7 (Lemon Meringue)

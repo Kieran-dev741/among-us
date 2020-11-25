@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <!-- Skeleton HTML and CSS document, created by Kieran McKinney -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <title>Image Gallery | Among Us | RGU Societies</title>
+        <!-- Bootstrap 4 CSS (for responsive image gallery effects) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/darkMode.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/imageGall.css" />
+        <link rel="icon" href="images/logo.png" />
+    </head>
+    
+    <body>
+        
+        <!-- Button that toggles dark mode for users -->
+        <button onclick="toggleDarkMode()" class="toggleButton" id="toggleButton">Toggle Dark <br/> Mode</button>
+        
+        <div class="content-wrapper">
+            <!-- Header block; contains the site logo and nav bar -->
+            <header id="header">
+                <h1>Among Us</h1>
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Events</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">How To Play</a>
+                    <a href="imageGall.html">Image Gallery</a>
+                    <a href="#">Current Members</a>
+                    <a href="#">Content Creators</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Merch</a>
+                    <a href="javascript:void(0);" class="icon" onclick="dropDownNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </header>
+            
+            <hr />
+            
+            <!-- Main Content -->
+            <main id="main">
+                
+                <h1>Among Us Image Gallery</h1>
+                <p>Here is a small list of among us artwork by some very talented artists. Click on an image to see the artist who made it, a link to more of their work can also be found.</p>
+                
+                <div class="row" data-toggle="modal" data-target="#modal" id="gallery">
+                    
+                    <div class="column">
+                        <img src="images/imageGall/1104366.png" data-target="#carousel" data-slide-to="0" />
+                        <img src="images/imageGall/1104367.jpg" data-target="#carousel" data-slide-to="1"/>
+                        <img src="images/imageGall/1104370.jpg" data-target="#carousel" data-slide-to="2"/>
+                    </div>
+                    
+                    <div class="column">
+                        <img src="images/imageGall/1104854.jpg" data-target="#carousel" data-slide-to="3"/>
+                        <img src="images/imageGall/1104855.jpg" data-target="#carousel" data-slide-to="4"/>
+                        <img src="images/imageGall/1104856.jpg" data-target="#carousel" data-slide-to="5"/>
+                    </div>
+                    
+                    <div class="column">
+                        <img src="images/imageGall/1104857.jpg" data-target="#carousel" data-slide-to="6"/>
+                        <img src="images/imageGall/1104860.jpg" data-target="#carousel" data-slide-to="7"/>
+                        <img src="images/imageGall/1104861.jpg" data-target="#carousel" data-slide-to="8"/>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal, This code is straight from the Bootstrap docs, essentially just a carousel inside a modal -->
+                <div class="modal fade" id="modal" tabindex="1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carousel" class="carousel slide" data-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/imageGall/1104366.png" class="d-block w-100" />
+                                        <p>Artist Name: Andrew. More of his work can be found <a href="https://alphacoders.com/users/profile/161720">here</a>.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/imageGall/1104367.jpg" class="d-block w-100" />
+                                        <p>Artist Name: Andrew. More of his work can be found <a href="https://alphacoders.com/users/profile/161720">here</a>.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/imageGall/1104370.jpg" class="d-block w-100" />
+                                        <p>Artist Name: Andrew. More of his work can be found <a href="https://alphacoders.com/users/profile/161720">here</a>.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/imageGall/1104854.jpg" class="d-block w-100" />
+                                        <p>Artist Name: Oreskis. More of his work can be found <a href="https://alphacoders.com/users/profile/194044">here</a>.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/imageGall/1104855.jpg" class="d-block w-100" />
+                                        <p>Artist Name: Oreskis. More of his work can be found <a href="https://alphacoders.com/users/profile/194044">here</a>.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/imageGall/1104856.jpg" class="d-block w-100" />
+                                        <p>Artist Name: Oreskis. More of his work can be found <a href="https://alphacoders.com/users/profile/194044">here</a>.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/imageGall/1104857.jpg" class="d-block w-100" />
+                                        <p>Artist Name: Oreskis. More of his work can be found <a href="https://alphacoders.com/users/profile/194044">here</a>.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/imageGall/1104860.jpg" class="d-block w-100" />
+                                        <p>Artist Name: Oreskis. More of his work can be found <a href="https://alphacoders.com/users/profile/194044">here</a>.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/imageGall/1104861.jpg" class="d-block w-100" />
+                                        <p>Artist Name: Oreskis. More of his work can be found <a href="https://alphacoders.com/users/profile/194044">here</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>                
+            </main>
+            
+            <hr />
+        
+            <!-- Footer Block -->
+            <footer id="footer">
+                <div class="leftFooter">
+                    <p>Robert Gordon University,<br />Garthdee House,<br />Garthdee Road,<br />Aberdeen<br />AB10 7QB</p>
+                </div>
+                <div class="centreFooter">
+                    <img src="images/footer.jpg" class="footerImg" />
+                    <p>Buy the game via steam, <a href="https://store.steampowered.com/app/945360/Among_Us/">here</a>.</p>
+                </div>
+                <div class="rightFooter">
+                    <div class="icon-wrapper">
+                        <a href="#" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+                        <a href="#" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fa fa-youtube-square"></i></a>
+                        <a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" title="Snapchat"><i class="fa fa-snapchat-square"></i></a>
+                    </div>
+                </div>
+                <div class="bottomFooter">
+                    <p>@ 2020 Robert Gordons University, Computing</p>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- Inline JavaScript Section -->
+        <script>
+            // Function that changes the styling of elements on button click
+            function toggleDarkMode() {
+                var header = document.getElementById("header");
+                var main = document.getElementById("main");
+                var footer = document.getElementById("footer");
+                var hrItems = document.getElementsByTagName("hr");
+                var button = document.getElementById("toggleButton");
+                header.classList.toggle("header_dark");
+                main.classList.toggle("main_dark");
+                footer.classList.toggle("footer_dark");
+                button.classList.toggle("button_dark");
+                for (var i = 0; i < hrItems.length; i++) {
+                    hrItems[i].classList.toggle("hr_dark");
+                }
+            }
+            
+            
+            // Function that adds a class to "topnav" allowing for the drop down menu on Mobile
+            function dropDownNav() {
+                var nav = document.getElementById("myTopnav");
+                if (nav.className === "topnav") {
+                    nav.className += " responsive";
+                } else {
+                    nav.className = "topnav";
+                }
+            }
+        </script>
+        
+    </body>
+</html>

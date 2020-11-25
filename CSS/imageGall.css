@@ -1,0 +1,56 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.modal-dialog {
+    background-color: #EEE;
+}
+
+.carousel-item p {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+main h1, main p {text-align: center;}
+main h1 {
+    font-family: 'headingFont';
+    font-size: 5em;
+}
+
+/* Makes two columns rather than four on smaller screens such as laptops or tablets */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .modal-dialog {
+        max-width: 58em;
+    }
+}
+
+/* Makes one column for Mobile devices */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    main h1 {font-size: 3em;}
+}

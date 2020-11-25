@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+    <!-- Skeleton HTML and CSS document, created by Kieran McKinney -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <title>Among Us | RGU Societies</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/darkMode.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/HTPStyles.css" />
+        <link rel="icon" href="images/logo.png" />
+    </head>
+    
+    <body>
+        
+        <!-- Button that toggles dark mode for users -->
+        <button onclick="toggleDarkMode()" class="toggleButton" id="toggleButton">Toggle Dark <br/> Mode</button>
+        
+        <div class="content-wrapper">
+            <!-- Header block; contains the site logo and nav bar -->
+            <header id="header">
+                <h1>Among Us</h1>
+                <div class="topnav" id="myTopnav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Events</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">How To Play</a>
+                    <a href="#">Image Gallery</a>
+                    <a href="#">Current Members</a>
+                    <a href="Content Creators.html">Content Creators</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Merch</a>
+                    <a href="javascript:void(0);" class="icon" onclick="dropDownNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </header>
+            
+            <hr />
+            
+            <!-- Main Content -->
+            <main id="main">
+                <!-- Button that will reveal the Imposter Div box and hide the Crewmate Div box on click and Vice Versa --> 
+                <button onclick="toggleImposterBox()" class="toggleDivButton" id="toggleDivButton">Toggle Imposter/Crewmate </button>
+                
+                <!-- Main Content of the page that is unaffected by the button click, this will always remain as general information -->
+                
+                <!-- Main Title of the page: How To Play --> 
+                <div class="title-heading">
+                    <h1> How To Play </h1>
+                    <p> If you're new to the Among Us universe, you've come to the right place! Here we'll show you how to get started, how to play as a Crewmate/Imposter and Map Tips &#38 Tricks. <br /> Even if you're an experienced player you may learn some things you didn't know! </p>
+                </div>
+                
+                <!-- Getting Started Section of the How To Play Page -->
+                <div class="top-content-heading">
+                    <h2> Getting Started </h2>
+                    <p> Before you start playing you need to do a couple of things before you can hop into your first lobby! </p>
+                </div>
+                
+                <!-- Section explaining types of play, how to play and the options bar -->
+                
+                <img src="images/StartScreen.jpg" height="300px" width="100%">
+                
+                <p> Here is the Main Menu screen of Among Us! Here you can choose what you want to play! </p>
+                <ul> 
+                    <li> Local: Picking Local allows you to play with nearby friends or family members that are connected to the same LAN connection as you. Think of it as a private game for within the house.</li>
+                    
+                    <li> How To Play: Among Us has its own guide for you to get yourself started, so if you need anymore help while in game you can refer to that guide (but of course we have more information here).</li>
+                    
+                    <li> FreePlay: If you ever want to just run about the maps and get to know them a bit more with AI crewmates you can do that peacefully in Freeplay! </li>
+                    
+                    <li> Online: Here is where you'll find the thousands of games hosted by other players around the world who have the same server selected as you. You could also host your own game publically or for your friends. </li>
+                    
+                    <li> Bar of Options: (From left to right) Here you can find the in-game announcements from the Among Us Dev Team; In-game settings; Hyperlink to the InnerSloth Website; Your In-game Statistics; Hyperlink to buy in game cosmetics dependant if on Steam or Mobile. </li>
+                    
+                </ul>
+                
+                <!-- Section explaining Public games, Private games & Hosting Games -->
+                <h2> Hosting Games, Public Games and Private Games </h2>
+                <img src="images/OnlinePlay.jpg" height="300px" width="100%"> 
+                <p> Here is the menu for Online Play, where you have a few options of how you want to play Among Us. </p>
+                
+                <ul>
+                    <li> Nickname (Important): Before you are allowed to enter any public or private game you must assign yourself a nickname. </li>
+                    
+                    <li> Public Game: Here is where you'll find many public games hosted by other players on the same server as you. If you want to have a quick game, public is where you can do that! </li>
+                    
+                    <li> Host Game: This is where you can host your own game either publically or privately with friends. </li>
+                    
+                    <li> Private Game: If you're playing privately with friends, your friends will give you a code which you enter here to join!</li>
+                </ul>
+                
+                <!-- Small Section explaining public games further such as: The Menu & The Game Filter Option -->
+                <h2> Jumping into a game </h2>
+                
+                <img src="images/PublicGameLobby.jpg" height="300px" width="100%"> 
+                <p> Here is the public game menu. This is where you can jump into Among Us with other players. </p>
+                
+                <ul> 
+                    <li> Game Filter: You may want to only look for games on specific maps or games with only 2 Imposters. This is where you can filter the games that appear on the public games list to cater for what you want to play.</li>
+                    
+                    <li> Game List: Here is where you'll find a random list of public games hosted by other players on the server you are currently connected to. You can see the map that has been selected by the host and the amount of Imposters you'll face.</li>
+                </ul>
+                
+                <!-- Small Section explaining the pre game lobby before the main game starts and a small explaination about where to change the in-game settings while hosting a game -->
+                
+                <h2> Pre-Game Lobby </h2>
+                
+                <img src="images/Host%20Lobby.png" height="300px" width="100%">
+                
+                <p> Whether you're joining a public lobby or hosting one for your friends, all Crewmates will meet in the pre-game lobby before the match starts. <br /> Take a minute to say hi to everyone! </p>
+                
+                <ul>
+                    <li> If you want to host a game for your friends or publically for anyone, head over to the computer. This is where you can customise the in game settings to give your game an extra funk to it! Test it as much as you want! </li>
+                </ul>
+                
+                <!-- Section of the page that explains the maps of the game and what all tasks within each map. The maps & explinations have been set into a small grid box for a neater appearance. -->
+                <h2> Maps </h2>
+                <p> Now let's explain the Maps of the game!</p>
+                
+                <!-- Start of the grid box -->
+                <div class="map-grid-box">
+                    
+                    <!-- Maps are assigned as items inside the grid-box -->
+                    
+                    <div class="map-grid-item">
+                        <h3> The Skeld </h3>
+                        
+                        <img src="images/TheSkeld.png" height="300px" width="100%">
+                        
+                        <p> Set in the spaceship of the Crewmates, the group is currently on their way to their next destination. <br /> However, before they get there they must make sure the ship makes it there safely. </p>
+                        
+                        <p> Tasks on The Skeld: </p>
+                        
+                        <ul>
+                            <li> Fix Wires </li>
+                            <li> Trash Shoot </li>
+                            <li> Download and Upload Data </li>
+                            <li> Submit Scan </li>
+                            <li> Inspect Sample </li>
+                            <li> Divert and Accept Power </li>
+                            <li> Start Reactor </li>
+                            <li> Unlock Manifolds </li>
+                            <li> Calibrate Distributor </li>
+                            <li> Refuel Engines </li>
+                            <li> Align Engine Output </li>
+                            <li> Admin Card Swipe </li>
+                            <li> Clear O2 Filter </li>
+                            <li> Prime Sheilds </li>
+                            <li> Clear Astroids </li>
+                            <li> Chart Course </li>
+                            <li> Stabilize Steering </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="map-grid-item">
+                        <h3> Polus </h3>
+                        
+                        <img src="images/Polus.png" height="300px" width="100%">
+                        
+                        <p> Set on a remote planet within our universe, the Crewmates are testing to see if this planet hosts anything valuable for our beautiful planet earth. <br />Make sure the base is at full working order! </p>
+                        
+                        <p> Tasks on Polus: </p>
+                        
+                        <ul>
+                            <li> Insert Keys </li>
+                            <li> Refuel Engines </li>
+                            <li> Align Telescope </li>
+                            <li> Chart Course </li>
+                            <li> Clear Asteroids </li>
+                            <li> Empty Garbage </li>
+                            <li> Fill Canisters </li>
+                            <li> Fix Weather Node </li>
+                            <li> Fix Wires </li>
+                            <li> Inspect Sample </li>
+                            <li> Monitor Tree </li>
+                            <li> Open Waterways </li>
+                            <li> Reboot Wifi </li>
+                            <li> Record Temperature </li>
+                            <li> Repair Drill </li>
+                            <li> Replace Water Jug </li>
+                            <li> Scan Boarding Pass </li>
+                            <li> Start Reactor </li>
+                            <li> Store Artifacts </li>
+                            <li> Submit Scan </li>
+                            <li> Admin Card Swipe </li>
+                            <li> Unlock Manifolds </li>
+                            <li> Download and Upload Data </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="map-grid-item">
+                        <h3> Mira HQ </h3>
+                        
+                        <img src="images/MiraHQ.png" height="300px" width="100%">
+                        
+                        <p> Set on planet earth, Mira HQ is the HeadQuarters of our favourite Crewmates. <br /> The Crewmates need to make sure everything is in working order before the next adventure! </p>
+                        
+                        <p> Tasks on Mira HQ: </p>
+                        
+                        <ul> 
+                            <li> Fix Wires </li>
+                            <li> Empty Garbage </li>
+                            <li> Prime Shields </li>
+                            <li> Chart Course </li>
+                            <li> ID Code </li>
+                            <li> Clear Asteroids </li>
+                            <li> Measure Weather </li>
+                            <li> Buy Beverage </li>
+                            <li> Clean O2 Filter </li>
+                            <li> Assemble Artifact </li>
+                            <li> Sort Samples </li>
+                            <li> Refuel Engines </li>
+                            <li> Run Diagnostics </li>
+                            <li> Submit Scan </li>
+                            <li> Process Data (Only Upload) </li>
+                            <li> Start Reactor </li>
+                            <li> Unlock Manifolds </li>
+                            <li> Divert Power </li>
+                            <li> Water Plants </li>
+                        </ul>
+                    </div>
+                <!-- End of Grid Box -->
+                </div>
+                
+                <!-- Small section explaining the Security Cameras in game -->
+                
+                <h2> Security Cameras </h2>
+                <p> Security Cameras are very useful in helping you catch Imposters. Cameras allow you to watch certain parts of the map while in another room, and if you're lucky, you'll find an Imposter trying to cause trouble. Camera locations are highlighted in blue. <br> Note: Mira HQ doesn't have Security Cameras </p>
+                
+                <!-- Start of the Crewmate Section of the How To Play Page. The crewDIV box will be shown as soon as the page loads but will be hidden and replaced with the impDIV section when the user clicks the toggle button --> 
+                <div id="crewDIV">
+                    
+                    <!-- Section explaining core sections of the Crewmates' UI & Objectives of the Crewmates-->
+                    <h1 class="top-content-heading"> Crewmate </h1>
+                    
+                    <img src="images/CrewmateScreen.jpg" height="300px" width="600px">
+                    
+                    
+                    <img src="images/CrewmateInGame.png" height="300px" width="600px">
+                    
+                    <p> Welcome Crewmates! Now that we're in a game, let's explain everything you need to keep an eye out for. </p>
+                
+                    <ul> 
+                        <li> Task Bar: This bar keeps track of how many objectives have been complete. Fill the bar to win! </li>
+                        
+                        <li> Objectives: These are your personal tasks. Look at the map to find out where these tasks are located. </li>
+                        
+                        <li> Report: If you find a body, report it to your fellow Crewmates to begin the voting process. </li>
+                    </ul>
+                
+                    <p> Crewmates have to complete one of the following in order to win: </p>
+                    <ol> 
+                        <li> Complete All Tasks </li>
+                        <li> Vote Off The Imposters </li>
+                    </ol>
+                    
+                    <!-- Section explaing sabotage in the POV of a crewmate and what to do during each sabotage -->
+                    <h2> Sabotage (Crewmate) </h2>
+                    <p> The Imposters will periodically sabotage the Crewmates to gain an advantage! <br /> The ways Imposters can sabotage are: </p>
+                
+                    <ul>
+                        <li> Lights: When sabotaged, the vision radius of every crewmate in the game will decrease until it's a minimum. Head over to electrical and flick the switches back to green to turn on the lights! </li>
+                    
+                        <li> Communications: When sabotaged, the objective bar will hide your personal tasks (you can still do them), but you will not know what they are. Fix the radio in Communications to get your tasks back! (Note: Cameras will be disabled during the sabotage). </li>
+                    
+                        <li> Reactor: When sabotaged, Crewmates have 30 seconds to stabilise the reactor, otherwise it will be an automatic lose. Two Crewmates are required to fix reactor: both Crewmates must place their hand on the touch pads at the same time to stabilise the reactor. </li>
+                    
+                        <li> O2 (Excluding Polus): When sabotaged, Crewmates have 30 seconds to restore the oxygen supply, otherwise it'll be an automatic lose. Two keypads will highlight on the map. Both require one Crewmate to input the codes shown on the notepad at the bottom-left of the keypads to fix the oxygen supply. </li>
+                    </ul>
+                    
+                    
+                    <!-- Section explaining the Voting Process as a crewmate -->
+                    <h2> The Voting Process (Crewmate) </h2>
+                
+                    <img src="images/Voting.png" height="300px" width="600px">
+                
+                    <p> A body has been discovered! Who do you think is the Imposter? <br /> Discuss with your fellow Crewmates and vote off that Imposter! <br /> Once everyone has voted or the timer has reached zero, the Crewmate with the most votes will be ejected to the vacuum of space! </p>
+                
+                    <img src="images/Ejection.jpg" height="300px" width="600px">
+                    
+                    <!-- Section explaining what you can do when killed as a crewmate -->
+                    <h2> Playing as a Crewmate (Ghost) </h2>
+                    <img src="images/CrewmateDeath.jpg" height="300px" width="600px">
+                    <img src="images/CrewmateGhost.jpg" height="300px" width="600px">
+                    
+                    <p> Not all hope is lost after you are killed or ejected! You can still help your team win! <br /> You can still complete your tasks while you're dead, but you must remain silent the entire time! </p>
+                    
+                    <!-- Section explaining the conditions of winning or losing as a crewmate -->
+                    <h2> Crewmate Victory Screen </h2>
+                
+                    <img src="images/CrewmateVictory.png" height="300px" width="600px">
+                    <p> If the Crewmates successfully detect the Imposters or complete all tasks, the Crewmates will win. </p>
+                
+                    <h2> Crewmate Lose Screen </h2>
+                
+                    <img src="images/CrewmateDefeat.jpg" height="300px" width="600px">
+                    <p> If the Imposters get rid of all the Crewmates, the Crewmates will lose. In addition, if the number of Crewmates equals the number of Imposters, the Crewmates will automatically lose. </p>
+                </div>
+                
+                <!-- Start of the Imposter Section of the How To Play Page. The impDIV box will be hidden as soon as the page loads but will be replaced with the crewDIV section when the user clicks the toggle button -->
+                
+                <div id="impDIV">
+                    
+                    <!-- Section explaining the core sections of the Imposter's UI & Objectives of the Imposters-->
+                    <h1 class="top-content-heading"> Imposter </h1>
+                
+                    <img src="images/ImposterScreen.jpg" height="300px" width="600px" id="heading-img">
+                
+                    <p> Welcome Imposters! Now that we're in the game, let's explain what you should keep an eye out for to give you an advanatage over the other Crewmates. </p>
+                    
+                    <img src="images/ImposterUI.jpg" height="300px" width="600px"> 
+                
+                    <ul>
+                        <li> Task Bar: This bar keeps track of how many objectives have been completed by the Crewmates. Use this as a way to keep track of how the Crewmates are doing in relation to their tasks.</li>
+                    
+                        <li> Sabotage: As an Imposter, you are able to cause disruption around the map that can give you the advantage and some easy kills.</li>
+                    
+                        <li> Kill: As an Imposter, you are able to kill the other players within the game to disrupt their progression on tasks. Note: Everytime you kill a Crewmate, there will be a cooldown before you can kill another player. This is the fastest way to dwindle the Crewmates numbers to win the game. </li>
+                    
+                        <li> Fake Tasks: As an Imposter, you don't do tasks. Instead, you fake tasks. Use this to your advantage to trick other players to belive you are innocent and drive suspision off you when it comes to the voting process.</li>
+                    </ul>
+                
+                    <p> Your objective as an Imposter is to kill or vote off enough Crewmates until the number of Crewmates is the same as the number of imposters. </p>
+                    
+                    <!-- Section explaining sabotage in the POV of the Imposter and best ways to utilise Sabotage to kill Crewmates -->
+                    <h2> Sabotage (Imposter) </h2>
+                
+                    <img src="images/SkeldSabotage.jpg" height="300px" width="600px">
+                
+                    <p> As an Imposter, you can sabotage periodically to slow down the Crewmates and get easy kills. Let's explain Sabotage and Tips with Sabotage. </p>
+                
+                    <ul>
+                        <li> Lights: When sabotaged, the vision radius of every Crewmate in the game will decrease until it's a minimum. Imposters vision will remain normal, so use this advantage to get a sneaky kill on a Crewmate that is making their way to electrical. </li>
+                    
+                        <li> Communications: When sabotaged, the Crewmates will have their objectives hidden from them until they fix the radio in the communications room. The greatest advantage is that the security cameras will also be disabled during this time, so use that to kill whoever is in security and leave the area quickly. </li>
+                    
+                        <li> Reactor: When sabotaged, Crewmates will have 30 seconds to stabilise the reactor. If the reactor isn't stabilised in that time, you will win. You can use this to kill Crewmates on their way to reactor or pause task progression for the Crewmates. </li>
+                    
+                        <li> O2 (Excluding Polus): When sabotaged, Crewmates have 30 seconds to restore the oxygen supply by inputting codes at two keypads. Use this time to either kill an unsuspecting Crewmate on their way to a keypad or stack with multiple crewmates on the same keypad and kill one. Although, the second way is very risky. </li>
+                    
+                        <li> Doors: As an Imposter, you can lock certain doors across the map that will keep Crewmates in that area of the map for around 30 seconds. Use this time to possibly hide bodies or kill when no one else is around. </li>
+                    </ul>
+                    
+                    <!-- Section explaining venting as the Imposter -->
+                
+                    <h2> Venting (Imposter Only) </h2>
+                
+                    <p> As an Imposter, you have to be able to kill Crewmates quickly and swiftly. You are able to use the vents scattered around the map to quickly get around. Be cautious as Crewmates could catch you venting if you are not careful. <br /> The vent locations and pathways have been highlighted for you. </p>
+                    
+                    <!-- Just as the Map Section, the vent maps & pathways have neen designed into a grid box to improve appearance -->
+                    <!-- Start of the grid-box -->
+                    <div class="map-grid-box">
+                        
+                        <!-- Maps are assigned as items inside the grid-box -->
+                        <div class="map-grid-item">
+                            <h3> The Skeld </h3>
+                        
+                            <img src="images/SkeldVentMap.png" height="300px" width="600px">
+                        
+                        </div>
+                    
+                        <div class="map-grid-item">
+                            <h3> Polus </h3>
+                        
+                            <img src="images/PolusVentMap.jpg" height="300px" width="600px">
+                        
+                        </div>
+                    
+                        <div class="map-grid-item">
+                            <h3> Mira HQ </h3>
+                            
+                            <img src="images/MiraVentMap.jpg" height="300px" width="600px">
+                        
+                        </div>
+                    </div>
+                    <p> Note: The kill cooldown does not decrease when inside a vent. </p>
+                    
+                    <!-- Section explaing the Voting Process as the Imposter and tips to survive through the vote -->
+                    <h2> The Voting Process (Imposter) </h2>
+                
+                    <img src="images/ImposterVoteOff.jpg" height="300px" width="600px">
+                
+                    <p> One of your victims has been discovered. Your communication skills are important here: when the Crewmates find a body you've killed, they'll try to windle down as many possible suspects to pin you as the killer. Lie as best as possible, use fake alibis without getting caught if possible and throw blame on other players. However, if worse comes to worse vote off a fellow imposter if they get caught to avoid suspicion. </p>
+                    
+                    <!-- Section explaining what you can do when ejected as a Imposter -->
+                    <h2> Playing as an Imposter (Ghost) </h2>
+                
+                    <img src="images/GhostImposter.png" height="300px" width="600px">
+                
+                    <p> Not all hope is lost if you're ejected! You can still help your fellow Imposters win! <br /> You can still sabotage while you're dead, but you must remain silent the entire time! </p>
+                    
+                    <!-- Section explaining the conditions of winning or losing as the Imposter -->
+                    <h2> Imposter Victory Screen </h2>
+                    
+                    <img src="images/ImposterWin.jpg" height="300px" width="600px">
+                    <p> If the Imposters manage to kill all Crewmates, eject enough Crewmates or successfully sabotage O2 or Reactor, the Imposters will win. </p>
+                
+                    <h2> Imposter Lose Screen </h2>
+                    
+                    <img src="images/ImposterDefeat.jpg" height="300px" width="600px">
+                    
+                    <p> If all of the Imposters are caught and voted off or if all Crewmates complete their tasks, the Imposters will lose. </p>
+                    
+                    <p> Now that you've learned how to play as the Imposter, start heading into some lobbies and sharpen up those killer skills! Have fun! </p>
+                </div>
+                
+            </main>
+            
+            <hr />
+        
+            <!-- Footer Block -->
+            <footer id="footer">
+                <div class="leftFooter">
+                    <p>Robert Gordon University,<br />Garthdee House,<br />Garthdee Road,<br />Aberdeen<br />AB10 7QB</p>
+                </div>
+                <div class="centreFooter">
+                    <img src="images/footer.jpg" class="footerImg" />
+                    <p>Buy the game via steam, <a href="https://store.steampowered.com/app/945360/Among_Us/">here</a>.</p>
+                </div>
+                <div class="rightFooter">
+                    <div class="icon-wrapper">
+                        <a href="#" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+                        <a href="#" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fa fa-youtube-square"></i></a>
+                        <a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" title="Snapchat"><i class="fa fa-snapchat-square"></i></a>
+                    </div>
+                </div>
+                <div class="bottomFooter">
+                    <p>@ 2020 Robert Gordons University, Computing</p>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- Inline JavaScript Section -->
+        <script>
+            // Function that changes the styling of elements on button click
+            function toggleDarkMode() {
+                var header = document.getElementById("header");
+                var main = document.getElementById("main");
+                var footer = document.getElementById("footer");
+                var hrItems = document.getElementsByTagName("hr");
+                var button = document.getElementById("toggleButton");
+                header.classList.toggle("header_dark");
+                main.classList.toggle("main_dark");
+                footer.classList.toggle("footer_dark");
+                button.classList.toggle("button_dark");
+                for (var i = 0; i < hrItems.length; i++) {
+                    hrItems[i].classList.toggle("hr_dark");
+                }
+            }
+            
+            
+            // Function that adds a class to "topnav" allowing for the drop down menu on Mobile
+            function dropDownNav() {
+                var nav = document.getElementById("myTopnav");
+                if (nav.className === "topnav") {
+                    nav.className += " responsive";
+                } else {
+                    nav.className = "topnav";
+                }
+            }
+            
+            // Function that replaces all content within the crewDIV box and replaces it with the impDiv box. 
+            function toggleImposterBox() {
+                var impBox = document.getElementById("impDIV");
+                var crewBox = document.getElementById("crewDIV");
+                var button = document.getElementById("toggleDivButton");
+                
+                if (impBox.style.display == "none") {
+                    impBox.style.display = "block";
+                    crewBox.style.display = "none";
+                    button.style.backgroundColor = "#8B0000";
+                }
+                else if(crewBox.style.display == "none") {
+                    crewBox.style.display = "block";
+                    impBox.style.display = "none";
+                    button.style.backgroundColor = "#00008B"
+                }
+                else{
+                    impBox.style.display = "none";
+                }
+                    
+            }
+        </script>
+        
+    </body>
+</html>

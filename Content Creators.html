@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <!-- Skeleton HTML and CSS document, created by Kieran McKinney -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <title>Among Us | RGU Societies</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/darkMode.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/CCStyles.css" />
+        <link rel="icon" href="images/logo.png" />
+    </head>
+    
+    <body>
+        
+        <!-- Button that toggles dark mode for users -->
+        <button onclick="toggleDarkMode()" class="toggleButton" id="toggleButton">Toggle Dark <br/> Mode</button>
+        
+        <div class="content-wrapper">
+            <!-- Header block; contains the site logo and nav bar -->
+            <header id="header">
+                <h1>Among Us</h1>
+                <div class="topnav" id="myTopnav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Events</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">How To Play</a>
+                    <a href="#">Image Gallery</a>
+                    <a href="#">Current Members</a>
+                    <a href="#">Content Creators</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Merch</a>
+                    <a href="javascript:void(0);" class="icon" onclick="dropDownNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </header>
+            
+            <hr />
+            
+            <!-- Main Content -->
+            <main id="main">
+                <!-- Heading for the Content Creators Page -->
+                <div class="top-heading">
+                    <h1>Content Creators</h1>
+                    <p>Here's a list of some of the many content creators that play Among Us! You'll be able to find their recent Among Us videos here!</p>
+                </div>
+                
+                <!-- All Content Creators content is set into a grid box to improve appearance. Three boxes for Content Creator image, Text description and recent Among Us video -->
+                
+                <!-- Text & Videos within the grid box have been styled to resize when the browser gets smaller -->
+                
+                <!-- Start of Delerious's box -->
+                <h2> H20 Delerious </h2>
+                
+                <div class="grid-container">
+                    <div class="grid-item"> 
+                        <img style="vertical-align: middle" src="images/delirious.jpg" class="img">
+                    </div>
+                    
+                    <div class="grid-item"> <p>12.5 Million Subscribers <br /> Originally apart of the "Vanoss Gaming Crew", Delerious became well known in the Call of Duty community when he was featured in Vanoss' videos. <br /> Becoming a YouTuber himself, Delerious has now achieved 12.5+ Million Subscribers during his time.<br /> Delerious is still seen a lot in Vanoss' videos, but when he isn't, you can find him killing other fellow crewmates!</p></div>
+                    
+                    <div class="grid-item"> 
+                        <iframe width="450" height="225" src="https://www.youtube.com/embed/oXzXp8bzknc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- End of Delerious' box -->
+                
+                <!-- Start of Vanoss' box -->
+                <h2> Vanoss Gaming </h2>
+                
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img style="vertical-align: middle" src="images/Vanoss.jpg" class="img">
+                    </div>
+                    
+                    <div class="grid-item">
+                        <p>25.3 Million Subscribers <br /> Joining YouTube in 2011, Vanoss has become a huge icon in the gaming community, raising to fame during the Call Of Duty era. Vanoss and Friends became well known for their Funny Moments, Amazing Killcams and Rage Moments. <br />Vanoss and Friends still play many games to this day, such as Among Us! </p>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <iframe width="450" height="225" src="https://www.youtube.com/embed/viR_VwgGk4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                    </div>
+                </div>
+                
+                <!-- End of Vanoss' box -->
+                
+                
+                <!-- Start of Wildcat's box -->
+                <h2> I AM WILDCAT </h2>
+                
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img style="vertical-align: middle" src="images/Wildcat.jpg" class="img">
+                    </div>
+                    
+                    <div class="grid-item">
+                        <p>7.71 Million Subscribers <br /> Joining YouTube in 2011, Wildcat is another friend within the Vanoss Crew, also well known for being featured in Vanoss' videos during the Call of Duty era. <br /> Wildcat takes the comedy in every funny moment and increases it by 100%. Still a member of the Vanoss Crew, Wildcat frequently plays with his friends nearly everyday. You can catch him playing Among Us frequently on his channel! </p>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <iframe width="450" height="225" src="https://www.youtube.com/embed/BG82yL05vtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <!-- End of Wildcat's box -->
+                
+                <!-- Start of Cartoonz' box -->
+                <h2> CaRt0oNz </h2>
+                
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img style="vertical-align: middle" src="images/cartoonz.jpg" class="img">
+                    </div>
+                    
+                    <div class="grid-item">
+                        <p> 3.61 Million Subscribers <br /> Joining YouTube in 2006, Cartoonz made a name for himself playing with DashieGames, theRadBrad, H20 and Ohmwrecker. <br /> Cartoonz plays a wide variety of games, but you can catch him playing a lot of Among Us with other popular content creators as such! It's been known never to kill Cartoonz while he does Simon Says. He hates it, but it makes it so much more hilarious! </p>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <iframe width="450" height="225" src="https://www.youtube.com/embed/-aWphnvmCVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- End of Cartoonz' box -->
+                
+                <!-- Start of JackSepticEye's box -->
+                <h2> JackSepticEye </h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img style="vertical-align: middle" src="images/jacksepticeye.jpg" class="img">
+                    </div>
+                    
+                    <div class="grid-item">
+                        <p> 25.6 Million Subscribers <br /> Joining YouTube in 2007, JackSepticEye is one of the most popular YouTubers on the platform. Jack plays many different games, small or large, but is more populary known for playing horror games, such as Amensia, similar to PewDiePie. Today, you can watch Jack play Among Us with other popular YouTubers!</p>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <iframe width="450" height="225" src="https://www.youtube.com/embed/57lPIU0r918" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- End of JackSepticEye's box -->
+                
+                <!-- Start of LazarBeam's box -->
+                <h2> LazarBeam </h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img style="vertical-align: middle" src="images/LazarBeam.jpg" class="img">
+                    </div>
+                    
+                    <div class="grid-item">
+                        <p> 17.2 Million Subscribers <br /> Joining YouTube in 2015, LazarBeam rose to the YouTube hall of fame during the Fortnite era, becoming known as the Fortnite Meme King. Today, Lazar plays a lot of Among Us with some popular Content Creators. Watch his most recent video here! </p>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <iframe width="450" height="225" src="https://www.youtube.com/embed/u-_P_f3GIb0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- End of LazarBeam's box -->
+
+            </main>
+            
+            <hr />
+        
+            <!-- Footer Block -->
+            <footer id="footer">
+                <div class="leftFooter">
+                    <p>Robert Gordon University,<br />Garthdee House,<br />Garthdee Road,<br />Aberdeen<br />AB10 7QB</p>
+                </div>
+                <div class="centreFooter">
+                    <img src="images/footer.jpg" class="footerImg" />
+                    <p>Buy the game via steam, <a href="https://store.steampowered.com/app/945360/Among_Us/">here</a>.</p>
+                </div>
+                <div class="rightFooter">
+                    <div class="icon-wrapper">
+                        <a href="#" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+                        <a href="#" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fa fa-youtube-square"></i></a>
+                        <a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" title="Snapchat"><i class="fa fa-snapchat-square"></i></a>
+                    </div>
+                </div>
+                <div class="bottomFooter">
+                    <p>@ 2020 Robert Gordons University, Computing</p>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- Inline JavaScript Section -->
+        <script>
+            // Function that changes the styling of elements on button click
+            function toggleDarkMode() {
+                var header = document.getElementById("header");
+                var main = document.getElementById("main");
+                var footer = document.getElementById("footer");
+                var hrItems = document.getElementsByTagName("hr");
+                var button = document.getElementById("toggleButton");
+                header.classList.toggle("header_dark");
+                main.classList.toggle("main_dark");
+                footer.classList.toggle("footer_dark");
+                button.classList.toggle("button_dark");
+                for (var i = 0; i < hrItems.length; i++) {
+                    hrItems[i].classList.toggle("hr_dark");
+                }
+            }
+            
+            
+            // Function that adds a class to "topnav" allowing for the drop down menu on Mobile
+            function dropDownNav() {
+                var nav = document.getElementById("myTopnav");
+                if (nav.className === "topnav") {
+                    nav.className += " responsive";
+                } else {
+                    nav.className = "topnav";
+                }
+            }
+        </script>
+        
+    </body>
+</html>

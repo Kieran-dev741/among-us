@@ -1,0 +1,160 @@
+/* Style Initialization */
+@font-face {
+    font-family: 'headingFont';
+    src: url('../in_your_face_joffrey/font.ttf') format('truetype');
+}
+
+* {box-sizing: border-box;}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+body {
+    background-image: url(../images/background-image.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-wrapper {
+    width: 80%;
+    background-color: #FFF;
+    margin: 0 auto;
+}
+
+hr {
+    line-height: 0;
+    border: 2px solid #003049;
+    margin: 0;
+}
+
+/* Header Style */
+header {
+    background-color: #EEE;
+    margin: 0;
+    padding: 14px 0px;
+}
+
+header h1 {
+    font-family: 'headingFont';
+    margin: 0;
+    font-size: 4em;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+/* Main Content Style (Most CSS for main content will be  in it's own stylesheet) */
+main {
+    background-color: #DDD;
+    padding: 10px 20px;
+}
+
+/* Navigation Style */
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 auto;
+}
+
+.topnav a:hover {
+    background-color: #003049;
+    color: #FFF;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* Footer Style */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer .leftFooter {
+    line-height: 30px
+}
+
+footer .rightFooter {
+    font-size: 50px;
+}
+
+footer .rightFooter .icon-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center
+}
+
+footer .rightFooter .icon-wrapper a {color: #333; padding: 0 15px}
+footer .rightFooter .icon-wrapper a:hover {color: #111;}
+
+footer .centreFooter img {
+    width: 50%;
+}
+
+footer .bottomFooter {grid-column: 1 / span 3;}
+
+/* Button Style */
+.toggleButton {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    background-color: #003049;
+    border: none;
+    color: #EEE;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.toggleButton:hover {
+    opacity: 1;
+}
+
+/* Mobile Style (Applies when screen width is 600px or smaller) */
+@media screen and (max-width: 600px) {
+    .content-wrapper {width: 100%;}
+    header h1 {text-align: left; padding-left: 10px;}
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+        display: block;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    footer{grid-template-columns: 1fr;}
+    footer .bottomFooter {grid-column: 1;}
+    .toggleButton{right: 0.5em; top: 0.5em;}
+}

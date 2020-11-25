@@ -1,0 +1,78 @@
+.slideshow-container {
+    max-width: 70em;
+    position: relative;
+    margin: auto;
+}
+
+.slides {display: none;}
+
+.slideshow-container a .text {
+    color: #EEE;
+    font-size: 50px;
+    text-decoration: none;
+    padding: 40px 62px;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    text-align: right;
+    background-color: rgba(20, 20, 20, 0.8);
+    margin: 20px;
+}
+
+.slideshow-container a:hover {
+    background-color: rgba(20, 20, 20, 1);
+}
+
+/* Fading Animation on Slides */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+/* Style for Grid with links */
+.linkGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.linkGrid a {
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
+.linkGrid h2 {
+    font-family: 'headingFont';
+    font-size: 3em;
+    margin: 20px 0;
+}
+.linkGrid .container {
+    padding: 0 20px;
+    border: 1px solid #003049;
+    border-radius: 10px;
+    margin: 10px 20px;
+    background-color: rgba(255, 255, 255, .7);
+}
+.linkGrid .container p {
+    padding: 20px 8px;
+}
+.linkGrid .container:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Mobile Style (Applies when screen width is 600px or smaller) */
+@media screen and (max-width: 600px) {
+    .slideshow-container a .text {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .linkGrid {grid-template-columns: 1fr;}
+}

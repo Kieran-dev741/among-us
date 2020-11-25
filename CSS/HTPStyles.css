@@ -1,0 +1,123 @@
+/* Style Sheet for the How To Play Page created by Liam Cortes */
+
+/* General text styling */
+
+/* font style for the crewmate & imposter section headings. (The font used in game) */
+@font-face{
+    font-family: 'divHeading';
+    src: url('vcr_osd_mono/VCR_OSD_MONO_1.001.ttf') format('truetype');
+}
+
+h2{
+    text-decoration: underline;
+}
+
+li{
+    padding: 5px;
+}
+
+.title-heading{
+    text-align: center;
+    border-bottom: 1px solid black; 
+}
+
+.top-content-heading{
+    text-align: center;
+}
+
+/* Styles for the grid box used for explaining the maps/tasks & vent system on maps */
+
+.map-grid-box {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+}
+
+.map-grid-item{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    border: 1px dotted black;
+}
+
+.map-grid-item img{
+    height: 300px;
+    width: 600px;
+    max-width: 100%;
+}
+
+.map-grid-item ul{
+    font-size: 15px;
+    text-align: left;
+}
+
+.map-grid-item p{
+    font-size: 15px;
+    text-align: left;
+}
+
+/* CSS for the Crewmate div box & Imposter div box */
+
+#crewDIV{
+    display: block;
+    border: 1px solid lightblue;
+}
+
+#crewDIV h1{
+    font-family: 'divHeading';
+    font-size: 50px;
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+#crewDIV img{
+    display: inline;
+    padding: 5px;
+    border: 1px solid grey;
+    width: 600px;
+    height: 300px;
+    max-width: 100%;
+}
+
+#impDIV{
+    display: none;
+    border: 1px solid brown;
+}
+
+#impDIV h1{
+    font-family: 'divHeading';
+    font-size: 50px;
+    text-decoration: underline;
+    color: brown;
+}
+
+
+#impDIV img{
+    display: inline;
+    padding: 5px;
+    border: 1px solid grey;
+    width: 600px;
+    height: 300px;
+    max-width: 100%;
+}
+
+/* Toggle Button */
+.toggleDivButton{
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+    .map-grid-box {
+        grid-template-columns: auto;
+    }
+}

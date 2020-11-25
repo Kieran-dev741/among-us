@@ -1,0 +1,50 @@
+/* Styles for the Content Creator page of the Among Us website created by Liam Cortes */
+
+/* General Text Styling */
+
+h2{
+    text-decoration: underline;
+}
+
+/* Style for the Content Creator Heading */ 
+
+.top-heading {
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+/* Styles for the grid box */
+
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+    border: solid 1px black;
+}
+
+.grid-container img {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.grid-item{
+    font-size: 20px;
+    text-align: left;
+    padding: 5px;
+}
+
+.grid-item iframe{
+    height: 225px;
+    width: 450px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}

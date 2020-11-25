@@ -1,0 +1,17 @@
+h1 {
+text-align: center;
+    
+}
+
+.content {
+    display:grid;
+    grid-template-columns: 25% 30% 15% 25%;
+    grid-column-gap: 2%;
+    
+}
+
+li {
+    font-size: 12px;
+
+}
+
